@@ -4,8 +4,10 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--baseColor);
   background: var(--baseBackground);
+
   /* border: 1px solid red; */
 }
+
 :root {
   --lime-green: hsl(163, 72%, 41%);
   --bright-red: hsl(356, 69%, 56%);
@@ -23,24 +25,30 @@ body {
   --switchSpinner: white;
   --switch: #5f616d;
 }
+
 .wrapper {
   padding: 0 30px;
 }
+
 .grid {
   display: grid;
   grid-row-gap: 25px;
 }
+
 .dark-mode {
   display: flex;
   justify-content: space-between;
   padding-top: 1em;
 }
+
 .checkbox {
   display: none;
 }
-.checkbox:checked ~ .switch:before {
+
+.checkbox:checked ~ .switch::before {
   transform: translateX(0);
 }
+
 .switch {
   /* border: 1px solid red; */
   height: 40px;
@@ -53,6 +61,7 @@ body {
   cursor: pointer;
   user-select: none;
 }
+
 .switch::before {
   content: "";
   display: block;
@@ -64,6 +73,7 @@ body {
   transition: 0.3s;
   will-change: transform;
 }
+
 /* header  */
 .header {
   /* border: 1px solid red; */
@@ -72,6 +82,7 @@ body {
   border-radius: 0 0 20px 20px;
   padding-top: 2em;
 }
+
 .header-total {
   color: var(--gray);
   margin: 0.5em 0;
@@ -79,10 +90,12 @@ body {
   border-bottom: 1px solid var(--gray);
   padding-bottom: 1.5em;
 }
+
 h1 {
   margin: 0;
   font-size: 1.7em;
 }
+
 /* overview  */
 .overview {
   padding-bottom: 2em;
@@ -101,6 +114,7 @@ h2 {
   border-radius: 8px;
   padding: 1.7em;
 }
+
 .card-small p {
   margin: 0;
 }
@@ -138,13 +152,16 @@ h2 {
   font-size: 0.8em;
   font-weight: bold;
 }
+
 .card-small-percentage.is-danger {
   color: var(--bright-red);
 }
+
 .card-small-percentage span {
   display: flex;
   align-items: center;
 }
+
 .card-small-percentage img {
   margin-right: 5px;
 }
@@ -155,6 +172,7 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 25px;
   }
+
   .wrapper {
     max-width: 1440px;
     margin: auto;
@@ -171,9 +189,11 @@ h2 {
   .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   .header-total {
     border: none;
   }
+
   .header-grid {
     display: grid;
     grid-template-columns: 1fr 200px;
