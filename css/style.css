@@ -50,7 +50,6 @@ body {
 }
 
 .switch {
-  /* border: 1px solid red; */
   height: 40px;
   display: block;
   border-radius: 20px;
@@ -69,16 +68,15 @@ body {
   height: 30px;
   background: var(--switchSpinner);
   border-radius: 50%;
-  transform: translateX(40px);
+  transform: translateX(30px);
   transition: 0.3s;
   will-change: transform;
 }
 
 /* header  */
 .header {
-  /* border: 1px solid red; */
   background: var(--lightGray);
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   border-radius: 0 0 20px 20px;
   padding-top: 2em;
 }
@@ -108,7 +106,7 @@ h2 {
 .card-small {
   /* border: 1px solid red; */
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 1em;
   background: var(--cardGray);
   border-radius: 8px;
@@ -169,7 +167,7 @@ h2 {
 @media screen and (min-width: 480px) {
   .grid {
     /* border: 1px solid purple; */
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 25px;
   }
 
@@ -181,13 +179,13 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .header-total {
