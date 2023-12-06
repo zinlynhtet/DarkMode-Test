@@ -45,6 +45,18 @@ body {
   display: none;
 }
 
+.switch::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: var(--switchSpinner);
+  border-radius: 50%;
+  transform: translateX(30px);
+  transition: 0.3s;
+  will-change: transform;
+}
+
 .checkbox:checked ~ .switch::before {
   transform: translateX(0);
 }
@@ -59,18 +71,6 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   user-select: none;
-}
-
-.switch::before {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 30px;
-  background: var(--switchSpinner);
-  border-radius: 50%;
-  transform: translateX(30px);
-  transition: 0.3s;
-  will-change: transform;
 }
 
 /* header  */
